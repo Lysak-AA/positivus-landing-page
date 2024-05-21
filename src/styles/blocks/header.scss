@@ -1,0 +1,33 @@
+.psv-header {
+  @include default-positioning();
+  padding: 60px 100px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.psv-logo {
+  cursor: pointer;
+}
+
+.psv-logo-mobile {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .psv-header {
+    padding: 30px 40px 35px;
+  }
+}
+
+@media (max-width: 430px) {
+  .psv-header {
+    padding: 30px 20px 35px;
+  }
+  .psv-logo {
+    display: none;
+  }
+  .psv-logo-mobile {
+    display: inline;
+  }
+}
