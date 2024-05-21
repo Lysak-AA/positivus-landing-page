@@ -1,0 +1,52 @@
+// FONTS
+@mixin heading($size, $weight, $lh) {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: $weight;
+  line-height: $lh;
+  font-size: $size;
+}
+
+// desktop
+
+@mixin h1-desktop {
+  @include heading(60px, 500, 77px);
+}
+
+@mixin h2-desktop {
+  @include heading(40px, 500, 51px);
+}
+
+@mixin h3-desktop {
+  @include heading(30px, 500px, 38px);
+}
+
+@mixin h4-desktop {
+  @include heading(28px, 500, 26px);
+}
+
+@mixin text-descktop {
+  @include heading(18px, 400, 23px);
+}
+
+// mobile
+
+@mixin h1-mobile {
+  @include heading(43px, 500, 55px)
+}
+
+@mixin h2-mobile {
+  @include heading(36px, 500, 46px)
+}
+
+@mixin h3-mobile {
+  @include heading(26px, 500, 33px)
+}
+
+@mixin h4-mobile {
+  @include heading(18px, 500, 23px)
+}
+
+@mixin text-mobile {
+  @include heading(16px, 400, 24px)
+}
