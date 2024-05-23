@@ -1,0 +1,46 @@
+.clients-section {
+  @include default-positioning();
+  padding: 70px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  &__wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  svg {
+    margin-right: 38px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .clients-section {
+    padding: 35px 40px;
+  }
+}
+@media (max-width: 820px) {
+  .clients-section {
+    justify-content: center;
+    overflow: hidden;
+    &__wrapper {
+      width: 630px;
+    }
+    &__wrapper:first-child {
+      margin-left: 150px;
+    }
+    &__wrapper:last-child {
+      margin-right: 100px;
+      svg:first-child {
+        order: 2;
+      }
+      svg:nth-child(2) {
+        order: 1;
+      }
+      svg:nth-child(3) {
+        order: 3;
+      }
+    }
+  }
+}
