@@ -1,0 +1,21 @@
+.services-section {
+  @include default-positioning();
+  padding: 70px 100px;
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  &__title {
+    @include h2-desktop();
+    margin-right: 40px;
+    display: block;
+    background-color: $accent;
+    padding: 7px;
+    border-radius: 7px;
+  }
+  &__description {
+    @include text-desktop();
+  }
+}
