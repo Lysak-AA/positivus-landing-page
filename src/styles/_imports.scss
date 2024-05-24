@@ -1,8 +1,14 @@
+// Vars, mixins, global styles and fonts
 @import './_variables.scss';
 @import './_mixins/index.scss';
 @import './_fonts.scss';
-@import './blocks/header.scss';
+
+// UI elements
 @import './ui-kit/button.scss';
+@import './ui-kit/service-card.scss';
+
+// Sections and layout blocks
+@import './blocks/header.scss';
 @import './blocks/nav-panel.scss';
 @import './blocks/intro-section.scss';
 @import './blocks/clients-section.scss';

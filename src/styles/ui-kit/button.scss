@@ -18,6 +18,20 @@
   }
 }
 
+.psv-icon-button {
+  @include btn-text;
+  display: flex;
+  justify-content: space-betweens;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  svg {
+    margin-right: 15px;
+    transition: 0.3s ease;
+  }
+}
+
 @media (hover) {
   .psv-button--light:hover {
     color: $white;
@@ -26,5 +40,10 @@
   .psv-button--dark:hover {
     color: $black;
     background-color: $white;
+  }
+  .psv-icon-button:hover {
+    svg {
+      transform: rotate(30deg);
+    }
   }
 }
