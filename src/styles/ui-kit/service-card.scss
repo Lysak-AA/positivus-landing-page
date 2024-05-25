@@ -1,6 +1,42 @@
 .service-card {
     height: 310px;
-    max-width: 600px;
+    width: 600px;
     min-width: 390px;
     padding: 50px;
+    margin-bottom: 40px;
+    border-radius: 45px;
+    border: 1px solid $black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__heading {
+        @include h3-desktop;
+    }
+    img {
+        position: absolute;
+        right: 50px;
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    &--light {
+        background-color: $light-grey;
+    }
+    &--accent {
+        background-color: $accent;
+    }
+    &--dark {
+        background-color: $dark-grey;
+    }
+}
+
+@media (max-width: 720px) {
+    .service-card {
+        img {
+            max-width: 30%;
+            bottom: 50px;
+            transform: translateY(0);
+        }
+    }
 }

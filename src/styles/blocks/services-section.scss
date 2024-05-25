@@ -4,6 +4,7 @@
   &__header {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 80px;
   }
@@ -17,5 +18,34 @@
   }
   &__description {
     @include text-desktop();
+    min-width: 320px;
+  }
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1280px) {
+  .services-section {
+    &__main {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-section {
+    &__header {
+      justify-content: center;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__description {
+      text-align: center;
+    }
   }
 }

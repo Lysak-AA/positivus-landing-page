@@ -47,3 +47,11 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .psv-icon-button {
+    span {
+      display: none;
+    }
+  }
+}
