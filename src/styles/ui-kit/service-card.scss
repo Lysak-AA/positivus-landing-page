@@ -41,6 +41,16 @@
     }
 }
 
+:where(.service-card--dark) button {
+    color: $white;
+}
+:where(.service-card--dark) button > svg > circle {
+    fill: $white;
+}
+:where(.service-card--dark) button > svg > path {
+    fill: $black;
+}
+
 @media (max-width: 720px) {
     .service-card {
         img {
