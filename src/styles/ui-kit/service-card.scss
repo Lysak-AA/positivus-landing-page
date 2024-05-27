@@ -1,7 +1,7 @@
 .service-card {
     height: 310px;
     width: 600px;
-    min-width: 390px;
+    min-width: 375px;
     padding: 50px;
     margin-bottom: 40px;
     border-radius: 45px;
@@ -28,6 +28,16 @@
     }
     &--dark {
         background-color: $dark-grey;
+    }
+    &__title--accent {
+        padding: 7px;
+        border-radius: 7px;
+        background-color: $accent;
+    }
+    &__title--light {
+        padding: 7px;
+        border-radius: 7px;
+        background-color: $white;
     }
 }
 
